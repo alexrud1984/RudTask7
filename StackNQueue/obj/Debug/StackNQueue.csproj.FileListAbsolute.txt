@@ -1,0 +1,1 @@
+D:\Projects\RudTask7\StackNQueue\StackNQueue\bin\Debug\StackNQueue.exe.config
