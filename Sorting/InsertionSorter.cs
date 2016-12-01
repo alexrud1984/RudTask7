@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Sorting
 {
-    class InsertionSorter:Sorter
+    class InsertionSorter<T> : Sorter<T> where T : IComparable<T>
     {
         public
-    InsertionSorter(Something[] matrix) : base(matrix) { }
+    InsertionSorter(T[] matrix) : base(matrix) { }
 
         public override void Sort()
         {

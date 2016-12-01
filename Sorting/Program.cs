@@ -10,20 +10,15 @@ namespace Sorting
     {
         static void Main(string[] args)
         {
-            Something[] userArray = new Something [5];
-            Console.WriteLine("Give the names for 5 something");
-            for (int i = 0; i < 5; i++)
-            {
-                userArray[i] = new Something();
-                userArray[i].Name=Console.ReadLine();
-            }
 
-            BubbleSorter bubble = new BubbleSorter(userArray.Clone() as Something[]);
+            int[] userArray = new int [] {42, 54, 555, 32, 1, -100, 0, 12 };
+
+            BubbleSorter <int> bubble = new BubbleSorter<int>(userArray.Clone() as int[]);
             bubble.Print();
             bubble.Sort();
             bubble.Print();
 
-            InsertionSorter insrt = new InsertionSorter(userArray.Clone() as Something[]);
+            InsertionSorter <int> insrt = new InsertionSorter <int>(userArray.Clone() as int[]);
             insrt.Print();
             insrt.Sort();
             insrt.Print();

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Sorting
 {
-    public abstract class Sorter : ISorter<Something []>
+    public abstract class Sorter <T> : ISorter <T>
     {
-        protected Something [] targetMatrix;
+        protected T [] targetMatrix;
 
         public void Print()
         {
@@ -16,21 +16,21 @@ namespace Sorting
                 Console.WriteLine("Array state:");
                 for (int i = 0; i < targetMatrix.Length; i++)
                 {
-                    Console.WriteLine($"Id {targetMatrix[i].Id} Name {targetMatrix[i].Name} ");
+                    Console.Write(targetMatrix[i]+" ");
                 }
                 Console.WriteLine();
             }
         }
 
 
-        public Sorter(Something [] targetMatrix)
+        public Sorter(T [] targetMatrix)
         {
             this.targetMatrix = targetMatrix;
         }
 
         public void Swap(int first, int second)                 //usual swap
         {
-            Something bufferValue = targetMatrix[first];
+            T bufferValue = targetMatrix[first];
             targetMatrix[first] = targetMatrix[second];
             targetMatrix[second] = bufferValue;
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sorting
 {
-    class BubbleSorter : Sorter
+    class BubbleSorter <T> : Sorter <T> where T: IComparable<T>
     {
         public override void Sort()
         {
@@ -26,6 +26,6 @@ namespace Sorting
             while (SwapTrue);
         }
 
-        public BubbleSorter(Something[] targetMatrix) : base(targetMatrix){ }
+        public BubbleSorter(T [] targetMatrix) : base(targetMatrix){ }
     }
 }
