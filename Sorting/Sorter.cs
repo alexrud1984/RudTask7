@@ -27,7 +27,7 @@ namespace Sorting
         }
 
 
-        public void Swap(int first, int second)                 //usual swap
+        protected void Swap(int first, int second)                 //usual swap
         {
             T bufferValue = targetMatrix[first];
             targetMatrix[first] = targetMatrix[second];

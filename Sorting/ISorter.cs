@@ -9,6 +9,5 @@ namespace Sorting
     public interface ISorter <T> : IPrintable
     {
         void Sort();
-        void Swap(int first, int second);
     }
 }
