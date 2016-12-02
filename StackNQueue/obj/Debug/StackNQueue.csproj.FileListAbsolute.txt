@@ -1,1 +1,6 @@
 D:\Projects\RudTask7\StackNQueue\StackNQueue\bin\Debug\StackNQueue.exe.config
+D:\Projects\RudTask7\StackNQueue\StackNQueue\obj\Debug\StackNQueue.csprojResolveAssemblyReference.cache
+D:\Projects\RudTask7\StackNQueue\StackNQueue\bin\Debug\StackNQueue.exe
+D:\Projects\RudTask7\StackNQueue\StackNQueue\bin\Debug\StackNQueue.pdb
+D:\Projects\RudTask7\StackNQueue\StackNQueue\obj\Debug\StackNQueue.exe
+D:\Projects\RudTask7\StackNQueue\StackNQueue\obj\Debug\StackNQueue.pdb
