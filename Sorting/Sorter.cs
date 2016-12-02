@@ -10,23 +10,22 @@ namespace Sorting
     {
         protected T [] targetMatrix;
 
+        public Sorter(T[] targetMatrix)
+        {
+            this.targetMatrix = targetMatrix;
+        }
+
         public void Print()
         {
             {
-                Console.WriteLine("Array state:");
                 for (int i = 0; i < targetMatrix.Length; i++)
                 {
-                    Console.Write(targetMatrix[i]+" ");
+                    Console.WriteLine(targetMatrix[i].ToString());
                 }
                 Console.WriteLine();
             }
         }
 
-
-        public Sorter(T [] targetMatrix)
-        {
-            this.targetMatrix = targetMatrix;
-        }
 
         public void Swap(int first, int second)                 //usual swap
         {

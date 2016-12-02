@@ -8,8 +8,7 @@ namespace Sorting
 {
     class InsertionSorter<T> : Sorter<T> where T : IComparable<T>
     {
-        public
-    InsertionSorter(T[] matrix) : base(matrix) { }
+        public InsertionSorter(T[] matrix) : base(matrix) { }
 
         public override void Sort()
         {

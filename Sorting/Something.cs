@@ -14,7 +14,14 @@ namespace Sorting
 
         public int CompareTo(Something other)
         {
-            return this.Name.CompareTo(other.Name);
+            
+            return (this.Name.CompareTo(other.Name));
+        }
+
+        public override string ToString()
+        {
+            string str = this.Id + " " + this.Name;
+            return str;
         }
 
         public Something()

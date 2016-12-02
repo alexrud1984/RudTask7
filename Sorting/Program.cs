@@ -11,18 +11,23 @@ namespace Sorting
         static void Main(string[] args)
         {
 
-            int[] userArray = new int [] {42, 54, 555, 32, 1, -100, 0, 12 };
+            Something[] userArray = new Something[5];
+            userArray[0] = new Something { Name = "Car" };
+            userArray[1] = new Something { Name = "Moto" };
+            userArray[2] = new Something { Name = "Bike" };
+            userArray[3] = new Something { Name = "Tram" };
+            userArray[4] = new Something { Name = "Bas" };
 
-            BubbleSorter <int> bubble = new BubbleSorter<int>(userArray.Clone() as int[]);
+            BubbleSorter<Something> bubble = new BubbleSorter<Something>(userArray.Clone() as Something[]);
             bubble.Print();
             bubble.Sort();
             bubble.Print();
 
-            InsertionSorter <int> insrt = new InsertionSorter <int>(userArray.Clone() as int[]);
+            InsertionSorter<Something> insrt = new InsertionSorter<Something>(userArray.Clone() as Something[]);
             insrt.Print();
             insrt.Sort();
             insrt.Print();
-
+            
             Console.ReadKey();
         }
     }
