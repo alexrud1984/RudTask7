@@ -15,12 +15,12 @@ namespace Sorting
             this.targetMatrix = targetMatrix;
         }
 
-        public void Print()
+        public void Print() //print of the matrix
         {
             {
-                for (int i = 0; i < targetMatrix.Length; i++)
+                foreach (T element in targetMatrix)
                 {
-                    Console.WriteLine(targetMatrix[i].ToString());
+                    Console.WriteLine(element); //ToString should be overloaded for custom classes
                 }
                 Console.WriteLine();
             }

@@ -18,6 +18,8 @@ namespace Sorting
             userArray[3] = new Something { Name = "Tram" };
             userArray[4] = new Something { Name = "Bas" };
 
+            int[] test = new int[] { 10, 5, -12, 0, 16};
+
             BubbleSorter<Something> bubble = new BubbleSorter<Something>(userArray.Clone() as Something[]);
             bubble.Print();
             bubble.Sort();
@@ -27,7 +29,7 @@ namespace Sorting
             insrt.Print();
             insrt.Sort();
             insrt.Print();
-            
+
             Console.ReadKey();
         }
     }
